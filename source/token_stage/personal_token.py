@@ -4,7 +4,6 @@ import sys
 
 def get_punctuation_list(file_processing=None):
     # address = file_processing.get_general_address("clusterization_components_excerpts//in//punctuation_mark")
-    print(__file__)
     folder_address = __file__[:__file__.rindex("\\")]
     local_address = "punctuation_mark"
     address = f"{folder_address}//{local_address}"

@@ -1,8 +1,8 @@
 import natasha as natasha
 
-from external_analizer.nlp_analizer import NLPAnalyzer
-from external_analizer.sentence_analizer import natasha_sent_adapter
-from token_stage.personal_token import SentenceToken, Token
+from source.external_analizer.nlp_analizer import NLPAnalyzer
+from source.external_analizer.sentence_analizer import natasha_sent_adapter
+from source.token_stage.personal_token import SentenceToken, Token
 
 
 class NatashaSent:
