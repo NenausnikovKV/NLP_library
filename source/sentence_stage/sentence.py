@@ -2,14 +2,14 @@
 
 import copy
 
-from graph_representation.vivo import Vivo
-from token_stage.personal_token import SentenceToken, Token
-from token_stage.word import SentenceWord
-
-from graph_representation.relation import Relation
-
-
 # todo переписать в 2 класса Sentence and TextSentence
+
+from source.graph_representation.relation import Relation
+from source.graph_representation.vivo import Vivo
+from source.token_stage.personal_token import SentenceToken, Token
+from source.token_stage.word import SentenceWord
+
+
 class Sentence:
     """
     Описание предложения, текст, список слов, текст-источник и границы в нем а также синтаксические данные
@@ -36,7 +36,7 @@ class Sentence:
 
     @classmethod
     def initial_from_text_excerpt(cls, text_excerpt, sentence_num=-1, sentence_start=-1):
-        from external_analizer.sentence_analizer.natasha_sent import NatashaSent
+        from source.external_analizer.sentence_analizer.natasha_sent import NatashaSent
         sentence = NatashaSent.get_sentence_from_sentence_text(text_excerpt, sentence_num, sentence_start)
         return sentence
 

@@ -1,11 +1,11 @@
 import inspect
+import sys
 
 
 def get_punctuation_list(file_processing=None):
     # address = file_processing.get_general_address("clusterization_components_excerpts//in//punctuation_mark")
-    current_module = __import__(__name__)
-    module_address = inspect.getfile(current_module)
-    folder_address = module_address[:module_address.rindex("\\")]
+    print(__file__)
+    folder_address = __file__[:__file__.rindex("\\")]
     local_address = "punctuation_mark"
     address = f"{folder_address}//{local_address}"
     f = open(address, "r", encoding="utf-8")

@@ -4,10 +4,9 @@ import os
 from math import sqrt
 from operator import attrgetter
 
-
-from graph_representation.relation import Relation
-from graph_representation.vertice import Vertice
-from token_stage.personal_token import Token
+from source.graph_representation.relation import Relation
+from source.graph_representation.vertice import Vertice
+from source.token_stage.personal_token import Token
 
 
 class Vivo:
